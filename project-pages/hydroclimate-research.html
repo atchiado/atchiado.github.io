@@ -64,10 +64,16 @@
         <div class="project-details-content">
           <div class="body-text">California’s climate has been historically subject to both prolonged droughts and extreme rainfall during the winter months. Additonally, the well-being of the state and its inhabitants is significantly impacted by the weather. There is empirical evidence that the global climate state during the late summer months (July through October) is a potential predictor for the winter California climate (November through March), which is traditionally difficult to predict and exhibits high variability. This research leverages deep learning methods to predict the climate for winter months for three different California regions (North, Central, and South), based on the summer climate state.
           </div>
-          <div class="body-text">Our research uses Convolutional Neural Network to create predictions on simulated climate data from the Community Earth System Model 2 (CESM2). This model is regarded as one of the best open source climate models available and offers 100 simulations over the years 1940-2014. While we are still working to fine tune the model to obtain improved results, we have already improved on the predictive performance of sophisticated linear regression models based on the El Niño Southern Oscillation (ENSO). 
+          <div class="body-text">Our research uses Convolutional Neural Networks to create predictions on real world climate data by using simulated climate data from the Community Earth System Model 2 (CESM2). This model is regarded as the best open source climate model available and offers 100 simulations over the years 1940-2014.
+          </div>
+          <div class="body-text">We have constructed three separate CNNs (one for each region of California) for prediction because of the different climate dynamics that affect each region and increased difficulty of predictive performance farther north in the state. This approach yields R-squared values of 0.09, 0.31, and 0.33 for the North, Central, and South respectively. These results are especially exciting because they match or improve upon the predictive performance of current methods and establish CNNs as a successful and promising solution for predicting California precipitation. An additional benefit to using CNNs for prediction is the possibility of obtaining saliency maps, which pinpoint geographic areas of the feature map that are important for the model's predictions. The use of saliency maps offers the possibility of uncovering previously unexamined climate dynamics for further environmental research. 
           </div>
           <a class="button" href="https://github.com/atchiado/California_Climate_Capstone">
-            <span class="button-text">Check out the project repo</span> 
+            <span class="button-text">Project Repo</span> 
+            <image src="../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+          </a>
+          <a class="button" href="https://s3.amazonaws.com/edas.manuscripts/final/1570996856.pdf?title=PDF+file">
+            <span class="button-text">Published Paper</span> 
             <image src="../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
           </a>
         </div>
